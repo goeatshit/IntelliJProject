@@ -16,6 +16,7 @@ public class TicketSystem {
         System.out.println("Oneway ticket = 150 dollars | Full ticket = 240 dollars ( 20% discount!!! )");
         System.out.println("150 dollars per ticket");
         System.out.println("---------------------------------------------------------------------------");
+
         while (!end) {
             System.out.println("How many tickets do you want to buy:  Total: " + total + " | Price: " + price);
             s = sc.nextLine();
@@ -90,7 +91,7 @@ public class TicketSystem {
                             System.out.println("Not enough money!");
                             System.out.println("You still need : " + ((total * oneway_ticket) - price));
                         }
-                    } else if (total % 2 == 0) {
+                    } else {
                         if (price >= ((total / 2) * full_ticket)) {
                             price -= (total / 2) * full_ticket;
                             System.out.println("You bought " + total + " full tickets!");
@@ -101,16 +102,15 @@ public class TicketSystem {
                             System.out.println("You still need : " + (int) (((total / 2) * full_ticket) - price));
                         }
                     }
-
                 }
             }
 
         }
         System.out.println("Have a nice day!");
-
     }
 
 }
+
 
 
 
