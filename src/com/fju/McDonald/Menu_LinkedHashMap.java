@@ -41,7 +41,7 @@ public class Menu_LinkedHashMap {
         return result;
     }
     public void Counts() {
-        while (input_id != 0) {
+        if (input_id != 0) {
             if (item_info.get("大麥克") == input_id) {
                 store_amounts[0] += input_amount;
             } else if (item_info.get("雙層吉士牛肉堡") == input_id) {
