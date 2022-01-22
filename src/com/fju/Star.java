@@ -27,10 +27,10 @@ public class Star {
         // arrow
         for (int k = 0; k <= 10; k++) {
             for (int w = 0; w <= 20; w++) {
-                if(w<=10){ // w>=10 is left arrow ; w<=10 is right arrow
-                    if(2*k==w||2*k==20-w){
+                if (w <= 10) { // w>=10 is left arrow ; w<=10 is right arrow
+                    if (2 * k == w || 2 * k == 20 - w) {
                         System.out.print("*");
-                    }else{
+                    } else {
                         System.out.print(" ");
                     }
                 }

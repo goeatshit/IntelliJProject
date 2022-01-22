@@ -28,7 +28,7 @@ public class GuessNumber {
                 System.out.println("The hidden number is " + secret);
                 break;
             }
-         }
+        }
 
     }
 

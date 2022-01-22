@@ -2,7 +2,7 @@ package com.fju;
 
 import java.util.Scanner;
 //pizza
-public class VendingMachine {
+public class PizzaVendingMachine {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int largePizza = 890;
@@ -12,7 +12,7 @@ public class VendingMachine {
         int total = 0;
         boolean end = false;
         String s;
-        System.out.println("Menu: ");
+        System.out.println("PizzaMenu: ");
         System.out.println("LargePizza = 890 dollars | MediumPizza = 590 dollars");
         System.out.println("SmallPizza = 290 dollars | Large+Small Pizza = 699 dollars");
         System.out.println("-----------------------------------------------------------");
