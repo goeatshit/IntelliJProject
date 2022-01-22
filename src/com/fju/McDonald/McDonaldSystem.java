@@ -37,13 +37,20 @@ public class McDonaldSystem {
                         String store_value = a.getValue(); // stored_order
                         System.out.println(store_key + ". " + store_value + " " + ma.store_amounts[ma.item_info.get(store_value) - 1] + "份");
                         ma.total_price += ma.item_price[ma.item_info.get(store_value) - 1] * ma.store_amounts[ma.item_info.get(store_value) - 1];
+                        ma.total_kcal += ma.item_kcal[ma.item_info.get(store_value) - 1] * ma.store_amounts[ma.item_info.get(store_value) - 1];
                     }
-                    System.out.print("合計: ");
-                    System.out.println(ma.total_price);
+                    System.out.print("價錢總計: ");
+                    System.out.println(ma.total_price+"元");
+                    System.out.print("熱量合計: ");
+                    System.out.println(ma.total_kcal+"kcal");
+                    if(ma.total_kcal>1200){
+                        System.out.println("高熱量餐點!!!");
+                    }
                     store.clear(); // clear store LinkHashMap
                     Arrays.fill(ma.store_amounts, 0); // clear store_amounts array
                     stack = 0; // reset stack to 0
                     ma.total_price = 0; // reset total price to 0
+                    ma.total_kcal = 0; // reset total kcal to 0
                 }
                 System.out.println("====================");
                 ma.getMenu();

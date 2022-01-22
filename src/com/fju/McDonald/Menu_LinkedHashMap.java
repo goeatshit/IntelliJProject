@@ -6,6 +6,7 @@ public class Menu_LinkedHashMap {
     int input_id;
     int input_amount;
     int total_price;
+    int total_kcal;
     int[] store_amounts = new int[7];
     boolean end = false;
     int[] item_kcal = {534, 446, 244, 321, 376, 397, 117};
